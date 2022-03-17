@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+}
+
+.homePage > img{
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(1.5);
+}
+
+.homePage > div{
+    width: 35vw;
+    height: 47vh;
+    backdrop-filter: blur(25px);
+    position: fixed;
+    top: 20vh;
+    left: 33vw;
+    z-index: 5;
+    border: solid black;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding-left: 15px;
+    padding-top: 10px;
+    color: white;
+}
+
+.homePage > div > * {
+    font-size: 25px;
+    border: solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 190px;
+    transition: all .2s ease-in-out;
+}
+
+
+.homePage > div > div:hover{
+    color: black;
+    cursor: pointer;
+    transform: scale(1.1);
+}
